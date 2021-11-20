@@ -32,7 +32,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: pcr.atslega.network/maxatslega/live-spotify-readme:latest
+          tags: pcr.atslega.network/live-spotify-readme:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
