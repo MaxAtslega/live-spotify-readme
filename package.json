@@ -26,9 +26,9 @@
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {
-    "@babel/core": "7.15.0",
-    "@babel/node": "7.14.9",
-    "@babel/preset-env": "7.15.0",
+    "@babel/core": "7.16.0",
+    "@babel/node": "7.16.0",
+    "@babel/preset-env": "7.16.4",
     "nodemon": "2.0.12",
     "prettier": "2.3.2"
   }
