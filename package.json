@@ -30,6 +30,6 @@
     "@babel/node": "7.16.0",
     "@babel/preset-env": "7.16.4",
     "nodemon": "2.0.12",
-    "prettier": "2.3.2"
+    "prettier": "2.5.0"
   }
 }
