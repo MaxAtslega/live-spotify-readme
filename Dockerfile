@@ -12,6 +12,7 @@ WORKDIR /build
 # Copy and download dependency using go mod
 COPY go.mod .
 COPY go.sum .
+COPY .env .
 RUN go mod download
 
 # Copy the code into the container
@@ -25,7 +26,10 @@ WORKDIR /dist
 
 # Copy binary from build to main folder
 RUN cp /build/main .
+RUN cp /build/.env .
 
+RUN mkdir template
+RUN cp /build/template/card.svg ./template/card.svg
 # Export necessary port
 EXPOSE 3000
 
