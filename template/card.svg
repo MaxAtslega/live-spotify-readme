@@ -9,7 +9,7 @@
             .progressbar { position: absolute; bottom: 10px; left: 130px; border: 1px solid #666666; box-sizing: border-box; border-radius: 3px; height: 10px; width: 460px;}
         </style>
         <div xmlns="http://www.w3.org/1999/xhtml" class="container">
-            {{if .IsPlaying}}<img class="cover" width="110" height="110" src="{{.Cover}}" />{{end}}
+            {{if .IsPlaying}}<img class="cover" width="110" height="110" src="data:image/jpeg;base64,{{.Cover}}" alt="Cover" />{{end}}
             <div xmlns="http://www.w3.org/1999/xhtml" class="song">
                 <div class="title">{{.Title}}</div>
                 <div class="artist">{{.Artist}}</div>
