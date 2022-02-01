@@ -57,28 +57,12 @@ func getSpotify(w http.ResponseWriter, r *http.Request) {
 			log.Println("ioutil.ReadAll -> %v", err)
 			return
 		}
-
-		var base64Encoding string
-
-		// Determine the content type of the image file
-		mimeType := http.DetectContentType(bytes)
-
-		// Prepend the appropriate URI scheme header depending
-		// on the MIME type
-		switch mimeType {
-		case "image/jpeg":
-			base64Encoding += "data:image/jpeg;base64,"
-		case "image/png":
-			base64Encoding += "data:image/png;base64,"
-		}
-
 		// Append the base64 encoded output
-		base64Encoding += toBase64(bytes)
 
 		data = template.PageData{
 			IsPlaying: true,
 			Title:     track.Item.Name,
-			Cover:     base64Encoding,
+			Cover:     toBase64(bytes),
 			Artist:    artist,
 			Progress:  template.CalcProgressBar(float64(track.ProgressMs), float64(track.Item.DurationMs)),
 		}

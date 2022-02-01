@@ -1,8 +1,8 @@
 package template
 
 import (
+	"html/template"
 	"math"
-	"text/template"
 )
 
 type PageData struct {
