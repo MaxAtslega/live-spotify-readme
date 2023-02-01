@@ -1,7 +1,7 @@
 # Live-Spotify-Template
 
 ## Review
-[<img src="https://spotify-live.atslega.de/api/spotify" alt="Spotify Playing" width="380"/>](https://github.com/MaxAtslega/live-spotify-readme)
+[<img src="https://spotify.atslega.dev/api/spotify" alt="Spotify Playing" width="380"/>](https://github.com/MaxAtslega/live-spotify-readme)
 
 ## How to get the SPOTIFY_REFRESH_TOKEN?
 1. Create a [Spotify Application](https://developer.spotify.com/dashboard/applications)
